@@ -6,7 +6,13 @@
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+    <StackPanel Name="StackPanel" Height="320" Width="525" >
+        <Button Name="Monstre" Content="Ajouter un monstre" Height="40"></Button>
+        <Button Name="Sorcier" Content="Ajouter un sorcier" Height="40"></Button>
+        <Button Name="Zombie" Content="Ajouter un zombie" Height="40"></Button>
+        <Button Name="LoupGarou" Content="Ajouter un Loup Garou" Height="40"></Button>
+        <Button Name="Vampire" Content="Ajouter un Vampire" Height="40"></Button>
+        <Button Name="Demon" Content="Ajouter un demon" Height="40"></Button>
+        <Button Name="Fantome" Content="Ajouter un Fantome" Height="40"></Button>
+    </StackPanel>
 </Window>
