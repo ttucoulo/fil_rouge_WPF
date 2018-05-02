@@ -1,0 +1,13 @@
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\MainWindow.g.cs
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\App.g.cs
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\ZombilleniumWPF_MarkupCompile.cache
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\ZombilleniumWPF_MarkupCompile.lref
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\bin\Debug\ZombilleniumWPF.exe.config
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\bin\Debug\ZombilleniumWPF.exe
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\bin\Debug\ZombilleniumWPF.pdb
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\MainWindow.baml
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\ZombilleniumWPF.g.resources
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\ZombilleniumWPF.Properties.Resources.resources
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\ZombilleniumWPF.csproj.GenerateResource.Cache
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\ZombilleniumWPF.exe
+c:\users\thiba\onedrive\documents\visual studio 2017\Projects\ZombilleniumWPF\ZombilleniumWPF\obj\Debug\ZombilleniumWPF.pdb
