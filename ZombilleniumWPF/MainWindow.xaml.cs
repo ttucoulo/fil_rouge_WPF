@@ -32,7 +32,7 @@ namespace ZombilleniumWPF
         {
             InitializeComponent();
             Administration adm = new Administration();
-            adm.AjoutMembresFromCSV("C:/Users/thiba/OneDrive/Documents/Visual Studio 2017/Projects/fil_rouge_git/POOI_GRP_TUCOULOU_FEURGARD/bin/Debug/Listing.csv");
+            adm.AjoutMembresFromCSV("C:/temp/Listing.csv");
         }
     }
 }
