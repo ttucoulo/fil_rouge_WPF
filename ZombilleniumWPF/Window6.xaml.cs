@@ -11,25 +11,26 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO;
+
 
 namespace ZombilleniumWPF
 {
     /// <summary>
-    /// Logique d'interaction pour Window1.xaml
+    /// Logique d'interaction pour Window6.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window6 : Window
     {
-        public Window1()
+        delegate void MesMethodes(int id);
+        event MesMethodes Evenement;
+        
+        public Window6()
         {
+            
             InitializeComponent();
-        }
-        private void c1_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
-        private void c2_Click(object sender, RoutedEventArgs e)
-        {
-            
+            Monstre donnee = new Monstre(55, "Ben", "beno", 0, "fonction", 45, 500);
+            this.DataContext = donnee;
+            // += (id) => { ID.Content = id; };
         }
     }
 }

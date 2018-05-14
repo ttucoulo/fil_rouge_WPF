@@ -32,24 +32,47 @@ namespace ZombilleniumWPF
         {
             InitializeComponent();
         }
-
+        private void b1_Click(object sender, RoutedEventArgs e)
+        {
+            //lire fichier direct (messagebox/grid)
+        }
         private void b2_Click(object sender, RoutedEventArgs e)
         {
-            
             Window1 mw2 = new Window1();
-            mw2.Activate();
-            MessageBox.Show("saluut");
-            
-           
-
+            this.Close();
+            mw2.Show();
+        }
+        private void b3_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 mw3 = new Window2();
+            this.Close();
+            mw3.Show();
+        }
+        private void b4_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 mw2 = new Window1();
+            this.Close();
+            mw2.Show();
+        }
+        private void b5_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 mw2 = new Window1();
+            this.Close();
+            mw2.Show();
         }
         private void  b6_Click(object sender, RoutedEventArgs e)
         {
-            //Window w2 = new Window();
-            //StackPanel sp2 = new StackPanel();
-            //w2.Content = sp2;
+            Window6 w6 = new Window6();
+            this.Close();
+            w6.Show();
 
         }
-
+        private void b7_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 mw2 = new Window1();
+            this.Close();
+            mw2.Show();
+        }
+        
     }
 }

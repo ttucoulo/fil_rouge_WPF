@@ -9,6 +9,7 @@ namespace ZombilleniumWPF
 {
     class Administration
     {
+        
         private List<Attraction> attractions;
         private List<Personnel> toutLePersonnel;
 
@@ -19,7 +20,7 @@ namespace ZombilleniumWPF
         }
 
         #region FONCTION_LOGICIEL
-
+        
         public void AjoutMembresFromCSV(string chemin)
         {
             StreamReader fichLect = new StreamReader(chemin);

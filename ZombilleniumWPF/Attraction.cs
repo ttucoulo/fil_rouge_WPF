@@ -10,6 +10,7 @@ namespace ZombilleniumWPF
 {
     abstract class Attraction : IComparable<Attraction> , INotifyPropertyChanged
     {
+        
         private bool besoinSpecifique;
         private TimeSpan dureeMaintenance;
         private List<Monstre> equipe;
