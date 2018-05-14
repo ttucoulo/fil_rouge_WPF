@@ -31,8 +31,25 @@ namespace ZombilleniumWPF
         public MainWindow()
         {
             InitializeComponent();
-            Administration adm = new Administration();
-            adm.AjoutMembresFromCSV("C:/temp/Listing.csv");
         }
+
+        private void b2_Click(object sender, RoutedEventArgs e)
+        {
+            
+            Window1 mw2 = new Window1();
+            mw2.Activate();
+            MessageBox.Show("saluut");
+            
+           
+
+        }
+        private void  b6_Click(object sender, RoutedEventArgs e)
+        {
+            //Window w2 = new Window();
+            //StackPanel sp2 = new StackPanel();
+            //w2.Content = sp2;
+
+        }
+
     }
 }

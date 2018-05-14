@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace ZombilleniumWPF
 {
-    abstract class Attraction : IComparable<Attraction>
+    abstract class Attraction : IComparable<Attraction> , INotifyPropertyChanged
     {
         private bool besoinSpecifique;
         private TimeSpan dureeMaintenance;
@@ -18,6 +20,8 @@ namespace ZombilleniumWPF
         private string nom;
         private  bool ouvert;
         private string typeDeBesoin;
+
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public Attraction(bool besoinS, TimeSpan dureeMaintenance, List<Monstre> eq, int id, bool maint, string natureM, int nbMinMonstre, string nom,
             bool ouvert, string typeBesoin)
@@ -64,6 +68,17 @@ namespace ZombilleniumWPF
         public int Id
         {
             get { return this.identifiant; }
+            set
+            {
+                if(value !=this.identifiant)
+                {
+                    identifiant = value;
+                    if(PropertyChanged != null)
+                    {
+                        PropertyChanged(this, new PropertyChangedEventArgs("identifiant"));
+                    }
+                }
+            }
         }
         public int NbMinMonstre
         {
