@@ -1,18 +1,14 @@
-﻿<Window x:Class="ZombilleniumWPF.Window6"
+﻿<Window x:Class="ZombilleniumWPF.Window6b"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
-        Title="Window6" Height="320" Width="525">
-
-
+        Title="Window6b" Height="300" Width="300">
     <StackPanel>
-        <Label Content="Identifiant :" />
-        <TextBox x:Name="ID" Text="{Binding Matricule, Mode=TwoWay}" />
-        <Button Name="Valid" Content="Valider" Width="50" Height="50" Click="ValidClick"/>
+        <Label Content="nouvelle cagnotte :" />
+        <TextBox Name="cagnotte" Text="{Binding Matricule, Mode=TwoWay}"/>
+        <Button Name="but1" Height="150" Width="300" Content="valider" Click="ValidClick"/>
     </StackPanel>
-        
-    
 </Window>

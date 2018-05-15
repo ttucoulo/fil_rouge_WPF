@@ -7,8 +7,10 @@ using System.Threading.Tasks;
 
 namespace ZombilleniumWPF
 {
+    
+
     class Monstre : Personnel,INotifyPropertyChanged, IComparable<Monstre>
-    {
+    {   
         //private Attraction affectation;
         private int affectation;
         private int cagnotte;

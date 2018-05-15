@@ -11,39 +11,27 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.IO;
-
 
 namespace ZombilleniumWPF
 {
     /// <summary>
-    /// Logique d'interaction pour Window6.xaml
+    /// Logique d'interaction pour Window2222.xaml
     /// </summary>
-    public partial class Window6 : Window
+    public partial class Window2222 : Window
     {
-        
         Administration donnee;
-        public Window6(object a)
+        public Window2222(object e)
         {
-            donnee = (Administration)a;
+            donnee = (Administration)e;
             InitializeComponent();
-            
-            this.DataContext = donnee;
-            
         }
-        
-        
         private void ValidClick(object sender, RoutedEventArgs e)
         {
-            
-            int matricule = int.Parse(ID.Text);
-            int index_monstre = donnee.ReturnIndexList(matricule, true);
-            if (index_monstre == 100) MessageBox.Show("Matricule non existant.");
-            else
+            donnee.ToutLePersonnel.Add(new Monstre(int.Parse(tMatricule.Text), tNom.Text, tPrenom.Text, donnee.CastTypeSexe(tSexe.Text), tFonction.Text, int.Parse(tAffectation.Text), int.Parse(tCagnotte.Text)));
+            MessageBox.Show("ajout fait");
+            for (int i = 0; i < donnee.ToutLePersonnel.Count; i++)
             {
-                Window6b mw2 = new Window6b(donnee,matricule);
-                this.Close();
-                mw2.Show();
+                MessageBox.Show( donnee.ToutLePersonnel[donnee.ToutLePersonnel.Count()-1].Nom);
             }
         }
     }

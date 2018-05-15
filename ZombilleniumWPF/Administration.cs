@@ -7,20 +7,21 @@ using System.IO;
 
 namespace ZombilleniumWPF
 {
+    
     class Administration
     {
         
         private List<Attraction> attractions;
         private List<Personnel> toutLePersonnel;
-
+        
         public Administration()
         {
             this.toutLePersonnel = new List<Personnel>();
             this.attractions = new List<Attraction>();
         }
-
-        #region FONCTION_LOGICIEL
         
+        #region FONCTION_LOGICIEL
+
         public void AjoutMembresFromCSV(string chemin)
         {
             StreamReader fichLect = new StreamReader(chemin);
@@ -1567,7 +1568,7 @@ namespace ZombilleniumWPF
             else return false;
         }
 
-
+        
         #endregion
 
         #region ACCESSEURS

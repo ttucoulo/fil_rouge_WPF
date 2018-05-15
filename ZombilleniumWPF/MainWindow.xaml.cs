@@ -27,49 +27,49 @@ namespace ZombilleniumWPF
 
     public partial class MainWindow : Window
     {
-
+        Administration donnee = new Administration();
         public MainWindow()
         {
+            donnee.AjoutMembresFromCSV("D:/2017-2018/POO/WTF/Listing.csv");
             InitializeComponent();
-        }
-        private void b1_Click(object sender, RoutedEventArgs e)
-        {
-            //lire fichier direct (messagebox/grid)
+            Administration a = new Administration();
+            a.AjoutMembresFromCSV("D:/2017-2018/POO/WTF/Listing.csv");
+            //MessageBox.Show("init fait");
         }
         private void b2_Click(object sender, RoutedEventArgs e)
         {
-            Window1 mw2 = new Window1();
+            Window1 mw2 = new Window1(donnee);
             this.Close();
             mw2.Show();
         }
         private void b3_Click(object sender, RoutedEventArgs e)
         {
-            Window2 mw3 = new Window2();
+            Window2 mw3 = new Window2(donnee);
             this.Close();
             mw3.Show();
         }
         private void b4_Click(object sender, RoutedEventArgs e)
         {
-            Window1 mw2 = new Window1();
+            Window1 mw2 = new Window1(donnee);
             this.Close();
             mw2.Show();
         }
         private void b5_Click(object sender, RoutedEventArgs e)
         {
-            Window1 mw2 = new Window1();
+            Window1 mw2 = new Window1(donnee);
             this.Close();
             mw2.Show();
         }
-        private void  b6_Click(object sender, RoutedEventArgs e)
+        private void  b6_Click(object sender, RoutedEventArgs e)//fait
         {
-            Window6 w6 = new Window6();
+            Window6 w6 = new Window6(donnee);
             this.Close();
             w6.Show();
 
         }
         private void b7_Click(object sender, RoutedEventArgs e)
         {
-            Window1 mw2 = new Window1();
+            Window1 mw2 = new Window1(donnee);
             this.Close();
             mw2.Show();
         }

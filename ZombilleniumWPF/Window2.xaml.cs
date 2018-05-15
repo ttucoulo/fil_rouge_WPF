@@ -17,11 +17,15 @@ namespace ZombilleniumWPF
     /// <summary>
     /// Logique d'interaction pour Window2.xaml
     /// </summary>
+    
     public partial class Window2 : Window
     {
-        public Window2()
+        Administration donnee;
+        public Window2(object e)
         {
+            donnee = (Administration)e;
             InitializeComponent();
+
         }
         private void d1_Click(object sender, RoutedEventArgs e)
         {

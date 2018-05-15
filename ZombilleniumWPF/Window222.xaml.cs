@@ -15,27 +15,31 @@ using System.Windows.Shapes;
 namespace ZombilleniumWPF
 {
     /// <summary>
-    /// Logique d'interaction pour Window1.xaml
+    /// Logique d'interaction pour Window222.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window222 : Window
     {
         Administration donnee;
-        public Window1(object a)
+        public Window222(object e)
         {
-            donnee = (Administration)a;
+            donnee = (Administration)e;
             InitializeComponent();
         }
-        private void c1_Click(object sender, RoutedEventArgs e)
+        private void b1_click(object sender, RoutedEventArgs e)
         {
-            Window22 mw2 = new Window22(donnee);
-            this.Close();
-            mw2.Show();
+
         }
-        private void c2_Click(object sender, RoutedEventArgs e)
+        private void b2_click(object sender, RoutedEventArgs e)
         {
-            Window222 mw2 = new Window222(donnee);
-            this.Close();
-            mw2.Show();
+
+        }
+        private void b3_click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void b4_click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

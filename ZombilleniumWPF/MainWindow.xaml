@@ -8,7 +8,6 @@
         Title="MainWindow1" Height="350" Width="525">
 
     <StackPanel Name="StackPanel1" Height="320" Width="525" >
-        <Button Name="b1" Content="Lire fichier" Height="40" Click="b1_Click"></Button>
         <Button Name="b2" Content="Ajouter membre/attraction" Height="40" Click="b2_Click"></Button>
         <Button Name="b3" Content="Faire évoluer" Height="40" Click="b3_Click"></Button>
         <Button Name="b4" Content="Sortir selon critère" Height="40" Click="b4_Click"></Button>
