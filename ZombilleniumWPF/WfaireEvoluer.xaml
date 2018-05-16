@@ -1,12 +1,13 @@
-﻿<Window x:Class="ZombilleniumWPF.Window2"
+﻿<Window x:Class="ZombilleniumWPF.WfaireEvoluer"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
-        Title="Window2" Height="320" Width="525">
-    <StackPanel Name="StackPanel1" Height="320" Width="525" >
-        
-    </StackPanel>
+        Title="WfaireEvoluer" Height="300" Width="300">
+    <Grid>
+        <Button Name="ChangerF" Content="Changer fonction" Click="chf_click" Margin="0,0,0,135"/>
+        <Button Name="ChangerA" Content="Changer affectation" Click="cha_click" Margin="0,134,0,0"/>
+    </Grid>
 </Window>

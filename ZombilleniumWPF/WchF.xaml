@@ -1,12 +1,14 @@
-﻿<Window x:Class="ZombilleniumWPF.Window2"
+﻿<Window x:Class="ZombilleniumWPF.WchF"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
-        Title="Window2" Height="320" Width="525">
-    <StackPanel Name="StackPanel1" Height="320" Width="525" >
-        
+        Title="WchF" Height="300" Width="300">
+    <StackPanel>
+        <Label Content="Nouvelle fonction :" />
+        <TextBox x:Name="NouvFonc" Text="{Binding Fonction, Mode=TwoWay}" />
+        <Button Name="Valid" Content="Valider" Width="50" Height="50" Click="ValidClick"/>
     </StackPanel>
 </Window>

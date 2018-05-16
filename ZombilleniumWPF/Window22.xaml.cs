@@ -35,23 +35,34 @@ namespace ZombilleniumWPF
         }
         private void b2_click(object sender, RoutedEventArgs e)
         {
-
+            Wsorcier mw2 = new Wsorcier(donnee);
+            this.Close();
+            mw2.Show();
         }
         private void b3_click(object sender, RoutedEventArgs e)
         {
-
+            Wvampire mw2 = new Wvampire(donnee);
+            this.Close();
+            mw2.Show();
         }
         private void b4_click(object sender, RoutedEventArgs e)
         {
+            Wloupgarou mw2 = new Wloupgarou(donnee);
+            this.Close();
+            mw2.Show();
 
         }
         private void b5_click(object sender, RoutedEventArgs e)
         {
-
+            Wdemon mw2 = new Wdemon(donnee);
+            this.Close();
+            mw2.Show();
         }
         private void b6_click(object sender, RoutedEventArgs e)
         {
-
+            Wfantome mw2 = new Wfantome(donnee);
+            this.Close();
+            mw2.Show();
         }
     }
 }

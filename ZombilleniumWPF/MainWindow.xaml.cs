@@ -36,15 +36,15 @@ namespace ZombilleniumWPF
             a.AjoutMembresFromCSV("D:/2017-2018/POO/WTF/Listing.csv");
             //MessageBox.Show("init fait");
         }
-        private void b2_Click(object sender, RoutedEventArgs e)
+        private void b2_Click(object sender, RoutedEventArgs e)//fait ajouter membre
         {
             Window1 mw2 = new Window1(donnee);
             this.Close();
             mw2.Show();
         }
-        private void b3_Click(object sender, RoutedEventArgs e)
+        private void b3_Click(object sender, RoutedEventArgs e)//fait
         {
-            Window2 mw3 = new Window2(donnee);
+            WMatricule mw3 = new WMatricule(donnee);
             this.Close();
             mw3.Show();
         }
@@ -67,7 +67,7 @@ namespace ZombilleniumWPF
             w6.Show();
 
         }
-        private void b7_Click(object sender, RoutedEventArgs e)
+        private void b7_Click(object sender, RoutedEventArgs e)//balec
         {
             Window1 mw2 = new Window1(donnee);
             this.Close();

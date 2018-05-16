@@ -15,33 +15,29 @@ using System.Windows.Shapes;
 namespace ZombilleniumWPF
 {
     /// <summary>
-    /// Logique d'interaction pour Window222.xaml
+    /// Logique d'interaction pour WfaireEvoluer.xaml
     /// </summary>
-    public partial class Window222 : Window
+    public partial class WfaireEvoluer : Window
     {
         Administration donnee;
-        public Window222(object e)
+        int matricule;
+        public WfaireEvoluer(object e,int mat)
         {
             donnee = (Administration)e;
+            matricule = mat;
             InitializeComponent();
         }
-        private void b1_click(object sender, RoutedEventArgs e)
+        private void chf_click(object sender, RoutedEventArgs e)
         {
-            Wboutique mw2 = new Wboutique(donnee);
+            WchF mw2 = new WchF(donnee,matricule);
             this.Close();
             mw2.Show();
         }
-        private void b2_click(object sender, RoutedEventArgs e)
+        private void cha_click(object sender, RoutedEventArgs e)
         {
-
-        }
-        private void b3_click(object sender, RoutedEventArgs e)
-        {
-
-        }
-        private void b4_click(object sender, RoutedEventArgs e)
-        {
-
+            WchA mw2 = new WchA(donnee,matricule);
+            this.Close();
+            mw2.Show();
         }
     }
 }
