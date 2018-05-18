@@ -6,6 +6,12 @@
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
         Title="Wsorcier" Height="300" Width="300">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="Black"/>
+            <GradientStop Color="#FF00FFF3" Offset="1"/>
+        </RadialGradientBrush>
+    </Window.Background>
     <Grid >
         <Label Name="Nom" Content="Nom : " Margin="0,10,0,232"/>
         <Label Name="Prenom" Content="Prenom : " Margin="0,42,0,191"/>
@@ -14,13 +20,20 @@
         <Label Name="Fonction" Content="Fonction : " Margin="0,145,0,84"/>
         <Label Name="Tatouage" Content="Tatouage : " Margin="0,185,0,54" />
         <Label Name="Pouvoir" Content="Pouvoir : " Margin="0,215,0,23" />
-        <TextBox Name="tNom" Text="{Binding Nom, Mode=TwoWay}" Margin="151,0,0,232"/>
-        <TextBox Name="tPrenom" Text="{Binding Prenom, Mode=TwoWay}" Margin="151,42,0,191"/>
-        <TextBox Name="tMatricule" Text="{Binding Matricule, Mode=TwoWay}" Margin="151,83,0,162"/>
-        <TextBox Name="tSexe" Text="{Binding Sexe, Mode=TwoWay}" Margin="151,112,0,124"/>
-        <TextBox Name="tFonction" Text="{Binding Fonction, Mode=TwoWay}" Margin="151,150,0,89"/>
-        <TextBox Name="tTatouage" Text="{Binding Tatouage, Mode=TwoWay}" Margin="151,185,0,59"/>
-        <TextBox Name="tPouvoir" Text="{Binding Pouvoir, Mode=TwoWay}" Margin="151,215,0,23" RenderTransformOrigin="0.467,3.241"/>
-        <Button Name="Valider" Content="Valider" Click="ValidClick" Margin="0,246,0,0"/>
+        <TextBox Name="tNom" Text="{Binding Nom, Mode=TwoWay}" Margin="151,0,0,232" Background="{x:Null}"/>
+        <TextBox Name="tPrenom" Text="{Binding Prenom, Mode=TwoWay}" Margin="151,42,0,191" Background="{x:Null}"/>
+        <TextBox Name="tMatricule" Text="{Binding Matricule, Mode=TwoWay}" Margin="151,83,0,162" Background="{x:Null}"/>
+        <TextBox Name="tSexe" Text="{Binding Sexe, Mode=TwoWay}" Margin="151,112,0,124" Background="{x:Null}"/>
+        <TextBox Name="tFonction" Text="{Binding Fonction, Mode=TwoWay}" Margin="151,150,0,89" Background="{x:Null}"/>
+        <TextBox Name="tTatouage" Text="{Binding Tatouage, Mode=TwoWay}" Margin="151,185,0,59" Background="{x:Null}"/>
+        <TextBox Name="tPouvoir" Text="{Binding Pouvoir, Mode=TwoWay}" Margin="151,215,0,23" RenderTransformOrigin="0.467,3.241" Background="{x:Null}"/>
+        <Button Name="Valider" Content="Valider" Click="ValidClick" Margin="0,246,0,0">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF00F3F3" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

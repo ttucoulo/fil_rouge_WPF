@@ -5,14 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
-        Title="MainWindow1" Height="350" Width="525">
+        Title="MainWindow1" Height="530" Width="525">
 
-    <StackPanel Name="StackPanel1" Height="320" Width="525" >
-        <Button Name="b2" Content="Ajouter membre/attraction" Height="40" Click="b2_Click"></Button>
-        <Button Name="b3" Content="Faire évoluer" Height="40" Click="b3_Click"></Button>
-        <Button Name="b4" Content="Sortir selon critère" Height="40" Click="b4_Click"></Button>
-        <Button Name="b5" Content="Tris" Height="40" Click="b5_Click"></Button>
-        <Button Name="b6" Content="Modifier cagnotte" Height="40" Click="b6_Click"></Button>
-        <Button Name="b7" Content="Gestion cagnotte" Height="40" Click="b7_Click"></Button>
+    <StackPanel Name="StackPanel1" Height="500" Width="525" >
+        <Button Name="b2" Content="Ajouter membre/attraction" Height="100" Click="b2_Click" BorderBrush="#FF0A0707">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="Red"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b3" Content="Faire évoluer" Height="100" Click="b3_Click" BorderBrush="#FF080303">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF22F700"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b4" Content="Sortir selon critère" Height="100" Click="b4_Click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF00D1FF"/>
+                </RadialGradientBrush>
+            </Button.Background>
+            <Button.BorderBrush>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF040D0F"/>
+                </RadialGradientBrush>
+            </Button.BorderBrush>
+        </Button>
+        <Button Name="b5" Content="Tris" Height="100" Click="b5_Click" BorderBrush="#FF060303">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFD570A"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b6" Content="Modifier cagnotte" Height="100" Click="b6_Click" BorderBrush="#FF0F0303">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFF3F300"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
     </StackPanel>
 </Window>

@@ -6,21 +6,29 @@
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
         Title="Wboutique" Height="300" Width="300">
+    <Window.Background>
+        <RadialGradientBrush>
+            <GradientStop Color="Black" Offset="1"/>
+            <GradientStop Color="White"/>
+        </RadialGradientBrush>
+    </Window.Background>
     <Grid>
-        <Label Name="Besoin" Content="esoins : " Margin="0,10,0,232"/>
-        <Label Name="dureeMaint" Content="Duree maintenance: " Margin="0,42,0,191"/>
-        <Label Name="Equipe" Content="Equipe : " Margin="0,78,0,162"/>
-        <Label Name="iD" Content="ID : " Margin="0,107,0,124"/>
-        <Label Name="Maintenance" Content="Maintenance : " Margin="0,145,0,84"/>
-        <Label Name="Nom" Content="Nom : " Margin="0,185,0,54" />
-        <Label Name="Ouvert" Content="Ouvert : " Margin="0,215,0,23" />
+        <Label Name="Besoin" Content="esoins : " Margin="0,10,0,232" Foreground="#FFF7F3F3"/>
+        <Label Name="dureeMaint" Content="Duree maintenance: " Margin="0,42,0,191" Foreground="#FFFDFDFD"/>
+        <Label Name="Equipe" Content="Equipe : " Margin="0,78,0,162" Foreground="#FFFBF4F4"/>
+        <Label Name="iD" Content="ID : " Margin="0,107,0,124" Foreground="#FFF1EAEA"/>
+        <Label Name="Maintenance" Content="Maintenance : " Margin="0,145,0,84" Foreground="#FFF3EFEF"/>
+        <Label Name="NatM" Content="NatureMaintenance : " Margin="0,185,0,54" />
+        <Label Name="NbMinM" Content="Nombre min monstres : " Margin="0,185,0,54" />
+        <Label Name="Nom" Content="Nom : " Margin="0,185,0,54" Foreground="#FFFDFDFD" />
+        <Label Name="Ouvert" Content="Ouvert : " Margin="0,215,0,23" Foreground="#FFF0F0F0" />
         <Label Name="Type" Content="Type : " Margin="0,247,0,23" />
-        <TextBox Name="tNom" Text="{Binding Nom, Mode=TwoWay}" Margin="151,0,0,232"/>
-        <TextBox Name="tPrenom" Text="{Binding Prenom, Mode=TwoWay}" Margin="151,42,0,191"/>
-        <TextBox Name="tMatricule" Text="{Binding Matricule, Mode=TwoWay}" Margin="151,83,0,162"/>
-        <TextBox Name="tSexe" Text="{Binding Sexe, Mode=TwoWay}" Margin="151,112,0,124"/>
-        <TextBox Name="tFonction" Text="{Binding Fonction, Mode=TwoWay}" Margin="151,150,0,89"/>
-        <TextBox Name="tAffectation" Text="{Binding Affectation, Mode=TwoWay}" Margin="151,185,0,59"/>
+        <TextBox Name="tNom" Text="{Binding Nom, Mode=TwoWay}" Margin="151,0,0,232" Background="{x:Null}"/>
+        <TextBox Name="tPrenom" Text="{Binding Prenom, Mode=TwoWay}" Margin="151,42,0,191" Background="{x:Null}"/>
+        <TextBox Name="tMatricule" Text="{Binding Matricule, Mode=TwoWay}" Margin="151,83,0,162" Background="{x:Null}"/>
+        <TextBox Name="tSexe" Text="{Binding Sexe, Mode=TwoWay}" Margin="151,112,0,124" Background="{x:Null}"/>
+        <TextBox Name="tFonction" Text="{Binding Fonction, Mode=TwoWay}" Margin="151,150,0,89" Background="{x:Null}"/>
+        <TextBox Name="tAffectation" Text="{Binding Affectation, Mode=TwoWay}" Margin="151,185,0,59" Background="{x:Null}"/>
         <TextBox Name="tCagnotte" Text="{Binding Cagnotte, Mode=TwoWay}" Margin="151,215,0,72" />
         <TextBox Name="tForce" Text="{Binding Force, Mode=TwoWay}" Margin="151,247,0,40" />
         <Button Name="Valider" Content="Valider" Click="ValidClick" Margin="0,279,0,0" RenderTransformOrigin="0.5,0.5"/>

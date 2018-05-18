@@ -7,7 +7,21 @@
         mc:Ignorable="d"
         Title="Window1" Height="350" Width="525">
     <StackPanel Name="StackPanel1" Height="320" Width="525" >
-        <Button Name="c1" Content="Ajouter membre" Height="160" Click="c1_Click"></Button>
-        <Button Name="c2" Content="Ajouter attraction" Height="160" Click="c2_Click"></Button>
+        <Button Name="c1" Content="Ajouter membre" Height="160" Click="c1_Click" BorderBrush="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFF10000" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="c2" Content="Ajouter attraction" Height="160" Click="c2_Click" BorderBrush="#FF080606">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF2300FF"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </StackPanel>
 </Window>

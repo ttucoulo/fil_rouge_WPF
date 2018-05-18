@@ -7,7 +7,21 @@
         mc:Ignorable="d"
         Title="WfaireEvoluer" Height="300" Width="300">
     <Grid>
-        <Button Name="ChangerF" Content="Changer fonction" Click="chf_click" Margin="0,0,0,135"/>
-        <Button Name="ChangerA" Content="Changer affectation" Click="cha_click" Margin="0,134,0,0"/>
+        <Button Name="ChangerF" Content="Changer fonction" Click="chf_click" Margin="0,0,0,135" BorderBrush="#FF0E0404">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFFF00E8" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="ChangerA" Content="Changer affectation" Click="cha_click" Margin="0,134,0,0" BorderBrush="#FF0F0707">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="Cyan"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

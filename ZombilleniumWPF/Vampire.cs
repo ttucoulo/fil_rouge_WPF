@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace ZombilleniumWPF
 {
-    class Vampire : Monstre,IComparable<Vampire>
+    class Vampire : Monstre, IComparable<Vampire>
     {
         private float indiceLuminosite;
 
-        public Vampire(int matricule, string nom, string prenom, TypeSexe sexe, string fonction, int affectation1,int cagnotte1,  float indiceLumi)
-            :base(matricule, nom, prenom, sexe, fonction, affectation1, cagnotte1)
+        public Vampire(int matricule, string nom, string prenom, TypeSexe sexe, string fonction, int affectation1, int cagnotte1, float indiceLumi)
+            : base(matricule, nom, prenom, sexe, fonction, affectation1, cagnotte1)
         {
             this.indiceLuminosite = indiceLumi;
         }
 
-        public override void ModifierCagnotte(Monstre monstre,int cagnotte)
+        public override void ModifierCagnotte(Monstre monstre, int cagnotte)
         {
-             if(this.Prenom.ToLower()=="rose" && this.Nom.ToLower()=="von bloodt")
+            if (this.Prenom.ToLower() == "rose" && this.Nom.ToLower() == "von bloodt")
             {
                 monstre.Cagnotte += cagnotte;
                 if (monstre.Cagnotte < 50)
@@ -31,6 +31,10 @@ namespace ZombilleniumWPF
                 }
             }
         }
+        public float IndiceLuminosite
+            {
+            get { return this.indiceLuminosite; }
+            }
         public override string ToString()
         {
             return (base.ToString() +

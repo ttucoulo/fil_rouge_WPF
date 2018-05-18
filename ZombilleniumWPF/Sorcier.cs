@@ -17,7 +17,10 @@ namespace ZombilleniumWPF
             this.tatouage = tatouage;
             this.pouvoirs = pouvoirs;
         }
-
+        public Grade Tatouage
+        {
+            get { return this.tatouage; }
+        }
         public override string ToString()
         {
             return base.ToString()+ " tatouage : "+this.tatouage;

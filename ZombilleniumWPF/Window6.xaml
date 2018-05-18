@@ -9,10 +9,31 @@
 
 
     <StackPanel>
-        <Label Content="Identifiant :" />
-        <TextBox x:Name="ID" Text="{Binding Matricule, Mode=TwoWay}" />
-        <Button Name="Valid" Content="Valider" Width="50" Height="50" Click="ValidClick"/>
+        <Label Content="Identifiant :" >
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFDAF5B3" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="ID" Text="{Binding Matricule, Mode=TwoWay}" Height="33" >
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFCAFF9F"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Name="Valid" Content="Valider" Height="242" Click="ValidClick">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFADF39E"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
     </StackPanel>
-        
-    
+
+
 </Window>

@@ -1,0 +1,35 @@
+﻿<Window x:Class="ZombilleniumWPF.WSortie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZombilleniumWPF"
+        mc:Ignorable="d"
+        Title="WSortie" Height="330" Width="500">
+    <StackPanel Name="StackPanel1" Height="320" Width="525" >
+        <Button Name="b1" Content="Afficher les monstres" Height="100" Click="b1_click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF03F9F9"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b2" Content="Afficher les sorciers" Height="100" Click="b2_click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF00DCFF"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b3" Content="Afficher les demons" Height="100" Click="b3_click">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFF90167"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
+    </StackPanel>
+</Window>

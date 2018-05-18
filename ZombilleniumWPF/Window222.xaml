@@ -5,11 +5,39 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ZombilleniumWPF"
         mc:Ignorable="d"
-        Title="Window222" Height="300" Width="300">
+        Title="Window222" Height="430" Width="300">
     <StackPanel>
-        <Button Name="b1" Content="Ajouter boutique" Click="b1_click"/>
-        <Button Name="b2" Content="Ajouter darkride" Click="b2_click"/>
-        <Button Name="b3" Content="Ajouter roller coaster" Click="b3_click"/>
-        <Button Name="b4" Content="Ajouter spectacle" Click="b4_click"/>
+        <Button Name="b1" Content="Ajouter boutique" Click="b1_click" Height="100">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF4F7EF9" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b2" Content="Ajouter darkride" Click="b2_click" Height="100">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF4A86F0" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b3" Content="Ajouter roller coaster" Click="b3_click" Height="100">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF4E85F9" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button Name="b4" Content="Ajouter spectacle" Click="b4_click" Height="100">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF409DFB" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </StackPanel>
 </Window>

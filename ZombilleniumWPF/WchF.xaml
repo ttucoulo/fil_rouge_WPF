@@ -7,8 +7,30 @@
         mc:Ignorable="d"
         Title="WchF" Height="300" Width="300">
     <StackPanel>
-        <Label Content="Nouvelle fonction :" />
-        <TextBox x:Name="NouvFonc" Text="{Binding Fonction, Mode=TwoWay}" />
-        <Button Name="Valid" Content="Valider" Width="50" Height="50" Click="ValidClick"/>
+        <Label Content="Nouvelle fonction :" >
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FFFF01DC" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="NouvFonc" Text="{Binding Fonction, Mode=TwoWay}" Height="26" BorderBrush="#FFFF01DC" >
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFF01DC"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Name="Valid" Content="Valider" Height="216" Click="ValidClick" BorderBrush="#FFFF01DC">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FFFF01DC"/>
+                    <GradientStop Color="#FF35002E" Offset="1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
     </StackPanel>
 </Window>

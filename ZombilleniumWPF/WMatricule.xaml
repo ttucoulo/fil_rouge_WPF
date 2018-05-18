@@ -7,8 +7,29 @@
         mc:Ignorable="d"
         Title="WMatricule" Height="300" Width="300">
     <StackPanel>
-        <Label Content="Identifiant :" />
-        <TextBox x:Name="ID" Text="{Binding Matricule, Mode=TwoWay}" />
-        <Button Name="Valid" Content="Valider" Width="50" Height="50" Click="ValidClick"/>
+        <Label Content="Identifiant :" >
+            <Label.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FF5D00FF" Offset="1"/>
+                </LinearGradientBrush>
+            </Label.Background>
+        </Label>
+        <TextBox x:Name="ID" Text="{Binding Matricule, Mode=TwoWay}" >
+            <TextBox.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF5800F1"/>
+                </LinearGradientBrush>
+            </TextBox.Background>
+        </TextBox>
+        <Button Name="Valid" Content="Valider" Height="223" Click="ValidClick">
+            <Button.Background>
+                <RadialGradientBrush>
+                    <GradientStop Color="Black" Offset="1"/>
+                    <GradientStop Color="#FF5A03F1"/>
+                </RadialGradientBrush>
+            </Button.Background>
+        </Button>
     </StackPanel>
 </Window>

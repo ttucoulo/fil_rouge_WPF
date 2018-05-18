@@ -29,10 +29,8 @@ namespace ZombilleniumWPF
         {
             donnee.ToutLePersonnel.Add(new Vampire(int.Parse(tMatricule.Text), tNom.Text, tPrenom.Text, donnee.CastTypeSexe(tSexe.Text), tFonction.Text, int.Parse(tAffectation.Text), int.Parse(tCagnotte.Text),int.Parse(tIndiceLumi.Text)));
             MessageBox.Show("ajout fait");
-            for (int i = 0; i < donnee.ToutLePersonnel.Count; i++)
-            {
-                MessageBox.Show(donnee.ToutLePersonnel[donnee.ToutLePersonnel.Count() - 1].Nom);
-            }
+            
+          
         }
     }
 }

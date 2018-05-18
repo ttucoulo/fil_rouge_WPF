@@ -50,13 +50,13 @@ namespace ZombilleniumWPF
         }
         private void b4_Click(object sender, RoutedEventArgs e)
         {
-            Window1 mw2 = new Window1(donnee);
+            WSortie mw2 = new WSortie(donnee);
             this.Close();
             mw2.Show();
         }
-        private void b5_Click(object sender, RoutedEventArgs e)
+        private void b5_Click(object sender, RoutedEventArgs e)//fait
         {
-            Window1 mw2 = new Window1(donnee);
+            WTtis mw2 = new WTtis(donnee);
             this.Close();
             mw2.Show();
         }
@@ -66,12 +66,6 @@ namespace ZombilleniumWPF
             this.Close();
             w6.Show();
 
-        }
-        private void b7_Click(object sender, RoutedEventArgs e)//balec
-        {
-            Window1 mw2 = new Window1(donnee);
-            this.Close();
-            mw2.Show();
         }
         
     }

@@ -15,45 +15,33 @@ using System.Windows.Shapes;
 namespace ZombilleniumWPF
 {
     /// <summary>
-    /// Logique d'interaction pour WTtis.xaml
+    /// Logique d'interaction pour WSortie.xaml
     /// </summary>
-    public partial class WTtis : Window
+    public partial class WSortie : Window
     {
         Administration donnee;
-        
-        public WTtis(object e)
+        public WSortie(object e)
         {
             donnee = (Administration)e;
-            
             InitializeComponent();
         }
-        private void b1_Click(object sender, RoutedEventArgs e)
+        private void b1_click(object sender, RoutedEventArgs e)
         {
-                WtriC mw2 = new WtriC(donnee);
-                this.Close();
-                mw2.Show();
-            
-        }
-        private void b2_Click(object sender, RoutedEventArgs e)
-        {
-            WtriF mw2 = new WtriF(donnee);
+            WAfficheM mw2 = new WAfficheM(donnee);
             this.Close();
             mw2.Show();
-            
         }
-        private void b3_Click(object sender, RoutedEventArgs e)
+        private void b2_click(object sender, RoutedEventArgs e)
         {
-            WtriCr mw2 = new WtriCr(donnee);
+            Window3 mw2 = new Window3(donnee);
             this.Close();
             mw2.Show();
-            
         }
-        private void b4_Click(object sender, RoutedEventArgs e)
+        private void b3_click(object sender, RoutedEventArgs e)
         {
-            WtriL mw2 = new WtriL(donnee);
+            WAfficheD mw2 = new WAfficheD(donnee);
             this.Close();
             mw2.Show();
-            
         }
     }
 }
